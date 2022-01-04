@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS cards (
+ card_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+ card_number VARCHAR(100) DEFAULT NULL,
+ customer_id INTEGER NOT NULL,
+ card_type VARCHAR(100) NOT NULL,
+ total_limit INTEGER NOT NULL,
+ amount_used INTEGER NOT NULL,
+ available_amount INTEGER NOT NULL,
+ create_dt DATE(100) DEFAULT NULL
+);
