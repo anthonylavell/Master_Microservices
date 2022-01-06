@@ -1,4 +1,4 @@
-package com.bank.account.config;
+package com.bank.loans.config;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,12 +10,13 @@ import java.util.List;
 import java.util.Map;
 
 @Configuration
-@ConfigurationProperties(prefix = "accounts")
-@Getter @Setter @ToString
-public class AccountServiceConfig {
+@ConfigurationProperties(prefix = "loans")
+@Getter
+@Setter
+@ToString
+public class LoanServiceConfig {
     private String msg;
     private String buildVersion;
     private Map<String,String> mailDetails;
     private List<String> activeBranches;
-
 }
