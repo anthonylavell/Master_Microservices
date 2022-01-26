@@ -33,6 +33,7 @@ public class LoansController {
 
     @PostMapping("/myLoans")
     public List<Loan> getLoansDetails(@RequestBody Customer customer){
+        System.out.println("Invoking Loans Microservice");
        List<Loan> loans = loansRepository.findByCustomerIdOrderByStartDtDesc(customer.getCustomerId());
         return loans;
     }
