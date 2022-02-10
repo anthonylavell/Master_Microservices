@@ -1,13 +1,13 @@
 package com.bank.account.entities;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter @Setter @ToString
 public class Accounts {
     @Id
